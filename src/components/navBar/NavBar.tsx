@@ -15,9 +15,9 @@ import PaymentIcon from '@mui/icons-material/Payment';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import SosIcon from '@mui/icons-material/Sos';
 import { Link, useLocation } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { setCurrentLink } from '../../redux/currentLink/currentLinkSlice';
-import { RootState } from '../../redux/store';
+// import { RootState } from '../../redux/store';
 
 const style={ textDecoration: 'none', color: 'inherit' }
 
@@ -35,7 +35,7 @@ const pages = [
 
 export default function SelectedListItem() {
   // const [selectedIndex, setSelectedIndex] = React.useState(0);
-  const currentLink = useSelector((state: RootState) => state.currentLink.link);
+  // const currentLink = useSelector((state: RootState) => state.currentLink.link);
 
   const dispatch = useDispatch();
   const location = useLocation();

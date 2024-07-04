@@ -53,7 +53,7 @@ export default function BlogerLink() {
     setValue(tab);
   }, [tabParam]);
 
-  const handleChange = (event: React.SyntheticEvent, newValue: number) => {
+  const handleChange = (_event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
     if (newValue === 0) {
       setSearchParams({});
